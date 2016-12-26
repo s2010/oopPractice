@@ -8,7 +8,7 @@ use DateTime;
  */
 class Task
 {
-
+    
     protected $id;
     protected $complete = false;
     protected $description;
@@ -47,5 +47,13 @@ class Task
           return new DateTime($this->due);
         }
         return $this->due;
+    }
+    
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 }
