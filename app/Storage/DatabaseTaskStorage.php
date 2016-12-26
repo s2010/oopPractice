@@ -5,9 +5,8 @@ use PDO;
 use Todo\Models\Task;
 use Todo\Storage\Contracts\TaskStorageInterface;
 
-/**
- *
- */
+
+
 class DatabaseTaskStorage implements TaskStorageInterface
 {
     protected $db;
